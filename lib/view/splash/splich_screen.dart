@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:chats/utils/common/text_custam.dart';
 import 'package:flutter/material.dart';
 
 class SplichScreen extends StatefulWidget {
@@ -15,20 +16,22 @@ class _SplichScreenState extends State<SplichScreen> {
 
     Timer(
       const Duration(seconds: 3),
-      () {
-        Navigator.pushNamed(context, '/DomainScreen');
-      },
+      () {},
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.amber, //AppColour.appcolour,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [Center(child: Text(""))],
-      ),
-    );
+        backgroundColor: Colors.amber, //AppColour.appcolour,
+        body: Row(
+          children: [TextCustom(text: "HEllo ")],
+        )
+
+        //  Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [Center(child: Text(""))],
+        // ),
+        );
   }
 }
